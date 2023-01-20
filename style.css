@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  background-color: white;
+}
+
+.imageCorporate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.imageCorporate a {
+  padding-right: 15px;
+}
+
+.inGen {
+  width: 2%;
+}
