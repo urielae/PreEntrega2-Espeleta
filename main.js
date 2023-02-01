@@ -1,3 +1,5 @@
+// DOM
+
 //OPTION 2: SEARCH PERSONEL OF JP COMPLEX// (En construcción)
 
 class users {
@@ -78,52 +80,6 @@ function logInJp() {
 }
 console.log(`Access granted, Welcome to JP Complex`);
 //  logInJp();
-
-// let attemp = false;
-
-// function logInJp() {
-//   do {
-//     let logued = prompt("Please insert your username");
-//     let passlog = parseInt(prompt("Insert four digit password"));
-
-//     const usuario = usuarios.find((usuario) => usuario.nombre === logued);
-
-//     if (logued == usuario.nombre && passlog == usuario.pass) {
-//       console.log(
-//         "Welcome to Jurassic Park Complex. Remember to not share your username and password with nobody. Keep the park safe"
-//       );
-//       break;
-//     } else {
-//       console.log("Please verify the data inserted");
-//       attemp = false;
-//     }
-//   } while (!attemp);
-// }
-
-// const arrayNombres = [];
-// const arrayContrasenia = [];
-// const nombreUsuario = showUsers.forEach((user) => {
-//   nombre = arrayNombres.push(user.name);
-// });
-// const contraseniaUsuario = showUsers.forEach(
-//   (user) => (contrasenia = arrayContrasenia.push(user.userPass))
-// );
-
-// function logInJp() {
-//   while (true) {
-//     let logued = prompt("Please insert your username");
-//     let passlog = parseInt(prompt("Insert four digit password"));
-//     console.log(logued, passlog);
-//     if (arrayNombres.includes(logued) && arrayContrasenia.includes(passlog)) {
-//       console.log(`Access granted, Welcome to JP Complex`);
-//       break;
-//     } else {
-//       // continue;
-//     }
-//   }
-// }
-
-// // logInJp();
 
 // OPTION 3: JP SYSTEM SECURITY//
 
@@ -327,7 +283,7 @@ const dino12 = new dinosaurs(
 
 const dino13 = new dinosaurs(
   "Near crested lizard",
-  "Parasaurolophu",
+  "Parasaurolophus",
   "Herbivore",
   4,
   10,
@@ -572,7 +528,7 @@ function optionDino(quit) {
   }
 }
 
-menu();
+// menu();
 
 ///////////////////////////////////////////
 
