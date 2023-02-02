@@ -1,4 +1,38 @@
-// DOM
+// DOM DINOSAURS
+
+let tRex = document.getElementById("tRex");
+let compi = document.getElementById("compi");
+let anky = document.getElementById("anky");
+let brachi = document.getElementById("brachi");
+let cera = document.getElementById("cera");
+let cory = document.getElementById("cory");
+let dilo = document.getElementById("dilo");
+let galli = document.getElementById("galli");
+let igua = document.getElementById("igua");
+let mame = document.getElementById("mame");
+let oura = document.getElementById("oura");
+let pachy = document.getElementById("pachy");
+let para = document.getElementById("para");
+let ptera = document.getElementById("ptera");
+let spino = document.getElementById("spino");
+let stego = document.getElementById("stego");
+let trice = document.getElementById("trice");
+let velo = document.getElementById("velo");
+
+// DOM PERSONEL
+
+let hammond = document.getElementById("hammond");
+let arnold = document.getElementById("arnold");
+let nedry = document.getElementById("nedry");
+let wu = document.getElementById("wu");
+let muldoon = document.getElementById("muldoon");
+
+// DOM NAV BAR
+
+let dnaLab = document.getElementById("dnaLab");
+let jpSecurity = document.getElementById("jpSecurity");
+let jpPersonel = document.getElementById("jpPersonel");
+let siteB = document.getElementById("siteB");
 
 //OPTION 2: SEARCH PERSONEL OF JP COMPLEX// (En construcción)
 
@@ -137,8 +171,6 @@ function DnaLab() {
 // DnaLab()
 
 //OPTION 5: DINOSAURS LIST//
-
-//https://jurassicpark.fandom.com/wiki/Dinosaur#Movie_Dinosaurs
 
 class dinosaurs {
   constructor(
@@ -532,7 +564,7 @@ function optionDino(quit) {
 
 ///////////////////////////////////////////
 
-// //SORT X APELLIDO
+// SORT X APELLIDO
 // const usuarios = [
 //   { name: 'John', surname: 'Hammond'},
 //   { name: 'John', surname: 'Arnold'},
@@ -549,3 +581,18 @@ function optionDino(quit) {
 //   return 0;
 // })
 // console.log(usuarios)
+
+// EVENTOS
+
+// - DNA LAB
+
+function createForm() {
+  let form = document.createElement("div");
+
+  form.innerHTML = "<p>Hola</p>";
+  document.body.append(form);
+}
+
+dnaLab.addEventListener("click", () => {
+  createForm();
+});

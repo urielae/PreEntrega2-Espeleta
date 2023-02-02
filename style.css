@@ -10,51 +10,45 @@
   padding-right: 0;
 }
 
-/* DINOSAURS */
-
-/* .dinoPage {
-  background-color: black;
-} */
+.main {
+  width: 100%;
+}
 
 /* NAV BAR */
 .dinosaurs {
-  width: 40%;
+  width: 50%;
 }
 
 .dnaLab {
-  width: 40%;
+  width: 50%;
 }
 
 .jpSecurity {
-  width: 40%;
+  width: 50%;
 }
 
 .nublarMap {
-  width: 40%;
+  width: 50%;
 }
 
 .personelJP {
-  width: 40%;
+  width: 50%;
 }
 
 #siteB {
-  width: 40%;
+  width: 50%;
 }
 
 .index {
-  width: 40%;
+  width: 50%;
 }
 /* FOOTER */
 .jpComplex {
-  width: 15%;
+  width: 25%;
 }
 
 .mrDna {
-  width: 12%;
-}
-
-.main {
-  width: 100%;
+  width: 15%;
 }
 
 footer {
@@ -62,5 +56,37 @@ footer {
 }
 
 .inGen {
-  width: 10%;
+  width: 20%;
+}
+
+/* DNA LAB */
+
+.dna1 img {
+  width: 50%;
+}
+
+.dna2 img {
+  width: 50%;
+}
+
+.dna3 img {
+  width: 50%;
+}
+
+.dna4 img {
+  width: 50%;
+}
+
+.dna5 img {
+  width: 50%;
+}
+
+.dna6 img {
+  width: 50%;
+}
+
+/* JP SYSTEM */
+
+.oppen img {
+  width: 75%;
 }
