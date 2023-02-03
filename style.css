@@ -42,6 +42,11 @@
 .index {
   width: 50%;
 }
+
+#ingenModal {
+  width: 20%;
+}
+
 /* FOOTER */
 .jpComplex {
   width: 25%;
