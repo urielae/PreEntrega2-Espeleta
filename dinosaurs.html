@@ -30,12 +30,19 @@
           /></a>
         </div>
         <div id="dnaLab" class="col">
-          <a class="d-flex justify-content-center" href="dnaLab.html"
+          <a
+            class="d-flex justify-content-center"
+            href="dnaLab.html"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
             ><img src="./images/pngwing.com.png" class="dnaLab" alt=""
           /></a>
         </div>
         <div id="jpSecurity" class="col">
-          <a class="d-flex justify-content-center" href="jpSystemSecurity.html"
+          <a class="d-flex justify-content-center" href="jpSystemSecurity.html" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@fat"
             ><img src="./images/securityJP.png" class="jpSecurity" alt=""
           /></a>
         </div>
@@ -50,7 +57,7 @@
           /></a>
         </div>
         <div id="siteB" class="col">
-          <a class="d-flex justify-content-center" href="#"
+          <a class="d-flex justify-content-center" href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3"
             ><img src="./images/BSite.png" id="siteB" alt=""
           /></a>
         </div>
@@ -62,6 +69,101 @@
       </div>
     </nav>
     <div class="container-fluid">
+      <!-- Modal 1-->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">JP Complex Login</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Username:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name1" />
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Four digit password:</label
+                  >
+                  <input type="password" maxlength="4" class="form-control" id="recipient-name2" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-dark">
+                Log
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 2-->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel1">JP Complex Login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Username:</label>
+                  <input type="text" class="form-control" id="recipient-name3">
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Four digit password:</label
+                  >
+                  <input type="password" maxlength="4" class="form-control" id="recipient-name4" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-dark">Log</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 3-->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 id="exampleModalLabel3"><strong>WARNING!  PERMISSION DENIED, ONLY INGEN PERSONEL</strong></h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
       <div class="dinoPage">
         <div class="d-flex flex-row-reverse pe-5 mt-5 pt-2 pb-4">
           <form class="d-inline-flex" role="search">
