@@ -34,6 +34,16 @@ let jpSecurity = document.getElementById("jpSecurity");
 let jpPersonel = document.getElementById("jpPersonel");
 let siteB = document.getElementById("siteB");
 
+// DOM BUTTONS LOGIN
+
+let buttonLogDna = document.getElementById("buttonLogDna");
+let buttonSecurity = document.getElementById("buttonSecurity");
+let inputDna = document.getElementById("inputDna");
+let logUserDna = document.getElementById("logUserDna");
+let passDna = document.getElementById("passDna");
+let logUserSecurity = document.getElementById("logUserSecurity");
+let passSecurity = document.getElementById("passSecurity");
+
 //OPTION 2: SEARCH PERSONEL OF JP COMPLEX// (En construcción)
 
 class users {
@@ -149,22 +159,23 @@ function DnaLab() {
   let attempsLab = 0;
 
   do {
-    let lablogIn = prompt("Insert your username");
-    let labPassword = parseInt(prompt("Insert four digit password"));
+    // let lablogIn = prompt("Insert your username");
+    // let labPassword = parseInt(prompt("Insert four digit password"));
 
-    if (lablogIn == user4.user && labPassword == user4.pass) {
+    if (logUserDna == user4.user && passDna == user4.pass) {
       labKeyWord = true;
-      alert(`ACCESS GRANTED, WELCOME ${user4.name}`.toUpperCase(user4.name));
-      function labLogIn() {
-        alert(
-          "Welcome to JP DNA Lab System. Remember to not share your username and password with nobody. Keep the park safe."
-        );
-      }
-      labLogIn(user4.user);
+      // alert(`ACCESS GRANTED, WELCOME ${user4.name}`.toUpperCase(user4.name));
+      // function inputDna() {
+      //   alert(
+      //     "Welcome to JP DNA Lab System. Remember to not share your username and password with nobody. Keep the park safe."
+      //   );
+      // }
+      // inputDna(user4.user);
     } else {
-      alert("PERMISSION DENIED");
+      // alert("PERMISSION DENIED");
       attempsLab = attempsLab + 1;
-      if (attempsLab == 3) alert("PERMISSION DENIED.");
+      if (attempsLab == 3) {
+      }
     }
   } while (!labKeyWord && attempsLab < 3);
 }
@@ -584,35 +595,4 @@ function optionDino(quit) {
 
 // EVENTOS
 
-// - DNA LAB
-// let form = document.getElementById(form);
-
-// function createForm() {
-//   let newDiv = document.createElement("div");
-//   newDiv.innerHTML = `<form>
-//   <div class="mb-3">
-//     <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-//     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-//     <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
-//   </div>
-//   <div class="mb-3">
-//     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-//     <input type="password" class="form-control" id="exampleInputPassword1">
-//   </div>
-//   <div class="mb-3 form-check">
-//     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-//     <label class="form-check-label" for="exampleCheck1">Verificado</label>
-//   </div>
-//   <button type="submit" class="btn btn-primary">Enviar</button>
-// </form>`;
-//   form.append(newDiv);
-// }
-
-// const loginDiv = document.getElementById("dnaLab");
-// loginDiv.addEventListener("click", function () {
-//   dnaLab.innerHTML = (
-
-//   );
-// });
-
-// dnaLab.append(modal);
+buttonLogDna.addEventListener("click", DnaLab());
