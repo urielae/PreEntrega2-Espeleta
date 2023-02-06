@@ -43,6 +43,8 @@ let logUserDna = document.getElementById("logUserDna");
 let passDna = document.getElementById("passDna");
 let logUserSecurity = document.getElementById("logUserSecurity");
 let passSecurity = document.getElementById("passSecurity");
+let btnSearchDino = document.getElementById("btnSearchDino");
+let btnSearchPersonel = document.getElementById("btnSearchPersonel");
 
 //OPTION 2: SEARCH PERSONEL OF JP COMPLEX// (En construcción)
 
@@ -593,6 +595,17 @@ function optionDino(quit) {
 // })
 // console.log(usuarios)
 
+// LOCAL STORAGE
+
+localStorage.setItem("searchUser", JSON.stringify(searchUser));
+localStorage.setItem("searchDino", JSON.stringify(searchDino));
+
+// SESSION STORAGE
+
+sessionStorage.setItem("showUsers", JSON.stringify(showUsers));
+
 // EVENTOS
 
 buttonLogDna.addEventListener("click", DnaLab());
+
+btnSearchDino.addEventListener("click", JSON.stringify(search));
