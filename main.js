@@ -46,7 +46,7 @@ let passSecurity = document.getElementById("passSecurity");
 let btnSearchDino = document.getElementById("btnSearchDino");
 let btnSearchPersonel = document.getElementById("btnSearchPersonel");
 
-//OPTION 2: SEARCH PERSONEL OF JP COMPLEX// (En construcción)
+// OPTION 2: SEARCH PERSONEL OF JP COMPLEX //
 
 class users {
   constructor(name, userName, userPass, charge) {
@@ -56,7 +56,7 @@ class users {
     this.charge = charge;
   }
 }
-console.log(users.length);
+// console.log(users.length);
 
 const user1 = new users("John Hammond", "tim.lex", 1423, "Park Owner");
 
@@ -86,7 +86,7 @@ const showUsers = [user1, user2, user3, user4, user5];
 // console.log(usser5);
 
 showUsers.forEach((users) => {
-  console.log(users.name, users.user, users.pass, users.charge);
+  // console.log(users.name, users.user, users.pass, users.charge);
 });
 
 const searchUser = [
@@ -117,17 +117,17 @@ function search() {
 
 // search();
 
-//OPTION 1: LOG IN// (En construcción)
-function logInJp() {
-  let logued = prompt("Please insert your username");
-  let passlog = parseInt(prompt("Insert four digit password"));
-  if (logued == users.user && passlog == users.pass) {
-  }
-}
-console.log(`Access granted, Welcome to JP Complex`);
+// OPTION 1: LOG IN //
+// function logInJp() {
+//   let logued = prompt("Please insert your username");
+//   let passlog = parseInt(prompt("Insert four digit password"));
+//   if (logued == users.user && passlog == users.pass) {
+//   }
+// }
+// console.log(`Access granted, Welcome to JP Complex`);
 //  logInJp();
 
-// OPTION 3: JP SYSTEM SECURITY//
+// OPTION 3: JP SYSTEM SECURITY //
 
 function systemSecurity() {
   let keyWord = false;
@@ -166,15 +166,15 @@ function DnaLab() {
 
     if (logUserDna == user4.user && passDna == user4.pass) {
       labKeyWord = true;
-      // alert(`ACCESS GRANTED, WELCOME ${user4.name}`.toUpperCase(user4.name));
-      // function inputDna() {
-      //   alert(
-      //     "Welcome to JP DNA Lab System. Remember to not share your username and password with nobody. Keep the park safe."
-      //   );
-      // }
-      // inputDna(user4.user);
+      alert(`ACCESS GRANTED, WELCOME ${user4.name}`.toUpperCase(user4.name));
+      function inputDna() {
+        alert(
+          "Welcome to JP DNA Lab System. Remember to not share your username and password with nobody. Keep the park safe."
+        );
+      }
+      inputDna(user4.user);
     } else {
-      // alert("PERMISSION DENIED");
+      alert("PERMISSION DENIED");
       attempsLab = attempsLab + 1;
       if (attempsLab == 3) {
       }
@@ -183,7 +183,7 @@ function DnaLab() {
 }
 // DnaLab()
 
-//OPTION 5: DINOSAURS LIST//
+// OPTION 5: DINOSAURS LIST //
 
 class dinosaurs {
   constructor(
@@ -204,7 +204,7 @@ class dinosaurs {
     this.jpId = jpId;
   }
 }
-console.log(dinosaurs.length);
+// console.log(dinosaurs.length);
 
 const dino1 = new dinosaurs(
   "Tyrant lizard/reptile king",
@@ -408,15 +408,15 @@ const showDino = [
 ];
 
 showDino.forEach((dinosaurs) => {
-  console.log(
-    dinosaurs.nameMeaning,
-    dinosaurs.codeName,
-    dinosaurs.diet,
-    dinosaurs.heightMeters,
-    dinosaurs.lenghtMeters,
-    dinosaurs.weightKg,
-    dinosaurs.jpId
-  );
+  // console.log(
+  //   dinosaurs.nameMeaning,
+  //   dinosaurs.codeName,
+  //   dinosaurs.diet,
+  //   dinosaurs.heightMeters,
+  //   dinosaurs.lenghtMeters,
+  //   dinosaurs.weightKg,
+  //   dinosaurs.jpId
+  // );
 });
 
 const searchDino = [
@@ -478,100 +478,100 @@ function findDinoById() {
 }
 // findDinoByCodeName();
 
-// OPTION 6: JP MAP (UNDER CONSTRUCTION)
+// OPTION 6: JP MAP (UNDER CONSTRUCTION) //
 
-//MAIN MENU//
+// MAIN MENU //
 
-function menu() {
-  let quitMenu = false;
-  do {
-    quitMenu = askOption(quitMenu);
-  } while (!quitMenu);
-}
+// function menu() {
+//   let quitMenu = false;
+//   do {
+//     quitMenu = askOption(quitMenu);
+//   } while (!quitMenu);
+// }
 
-function askOption(quit) {
-  let dataInserted = parseInt(
-    prompt(`Welcome to Jurassic Park Complex System, please choose an option
-  1 - Log In
-  2 - Search Personel of JP Complex
-  3 - JP System Security 
-  4 - Access to DNA Lab System
-  5 - Access to Dinosaurs List
-  6 - JP Nublar Island Map (Site A)
-  7 - Site B
-  8 - Exit JP Complex System`)
-  );
+// function askOption(quit) {
+//   let dataInserted = parseInt(
+//     prompt(`Welcome to Jurassic Park Complex System, please choose an option
+//   1 - Log In
+//   2 - Search Personel of JP Complex
+//   3 - JP System Security
+//   4 - Access to DNA Lab System
+//   5 - Access to Dinosaurs List
+//   6 - JP Nublar Island Map (Site A)
+//   7 - Site B
+//   8 - Exit JP Complex System`)
+//   );
 
-  switch (dataInserted) {
-    case 1:
-      logInJp();
-      alert("Access granted, Welcome to JP Complex");
-      break;
-    case 2:
-      search();
-      break;
-    case 3:
-      systemSecurity();
-      break;
-    case 4:
-      DnaLab();
-      break;
-    case 5:
-      subMenuDino();
-      break;
-    case 6:
-      alert("SORRY WE ARE UNDER CONSTRUCTION");
-      break;
-    case 7:
-      alert("WARNING! PERMISSION DENIED, ONLY INGEN PERSONEL");
-      break;
-    case 8:
-      alert("Thanks for use JP Complex System");
-      quit = true;
-      return quit;
-      break;
-    default:
-      alert("Choose a correct option");
-      break;
-  }
-}
+//   switch (dataInserted) {
+//     case 1:
+//       logInJp();
+//       alert("Access granted, Welcome to JP Complex");
+//       break;
+//     case 2:
+//       search();
+//       break;
+//     case 3:
+//       systemSecurity();
+//       break;
+//     case 4:
+//       DnaLab();
+//       break;
+//     case 5:
+//       subMenuDino();
+//       break;
+//     case 6:
+//       alert("SORRY WE ARE UNDER CONSTRUCTION");
+//       break;
+//     case 7:
+//       alert("WARNING! PERMISSION DENIED, ONLY INGEN PERSONEL");
+//       break;
+//     case 8:
+//       alert("Thanks for use JP Complex System");
+//       quit = true;
+//       return quit;
+//       break;
+//     default:
+//       alert("Choose a correct option");
+//       break;
+//   }
+// }
 
-function subMenuDino() {
-  let quitMenuDino = false;
-  do {
-    quitMenuDino = optionDino(quitMenuDino);
-  } while (!quitMenuDino);
-}
+// function subMenuDino() {
+//   let quitMenuDino = false;
+//   do {
+//     quitMenuDino = optionDino(quitMenuDino);
+//   } while (!quitMenuDino);
+// }
 
-function optionDino(quit) {
-  let dataInsertedDino = parseInt(
-    prompt(`Welcome to Jurassic Park Dinosaurs list
-  1 - Search Dinosaur by name
-  2 - Search Dinosaur by food and energy requirements
-  3 - Search Dinosaur by ID 
-  4 - Exit Dinosaurs list`)
-  );
+// function optionDino(quit) {
+//   let dataInsertedDino = parseInt(
+//     prompt(`Welcome to Jurassic Park Dinosaurs list
+//   1 - Search Dinosaur by name
+//   2 - Search Dinosaur by food and energy requirements
+//   3 - Search Dinosaur by ID
+//   4 - Exit Dinosaurs list`)
+//   );
 
-  switch (dataInsertedDino) {
-    case 1:
-      findDinoByCodeName();
-      break;
-    case 2:
-      findDinoByDiet();
-      break;
-    case 3:
-      findDinoById();
-      break;
-    case 4:
-      alert("Logging out");
-      quit = true;
-      return quit;
-      break;
-    default:
-      alert("Choose a correct option");
-      break;
-  }
-}
+//   switch (dataInsertedDino) {
+//     case 1:
+//       findDinoByCodeName();
+//       break;
+//     case 2:
+//       findDinoByDiet();
+//       break;
+//     case 3:
+//       findDinoById();
+//       break;
+//     case 4:
+//       alert("Logging out");
+//       quit = true;
+//       return quit;
+//       break;
+//     default:
+//       alert("Choose a correct option");
+//       break;
+//   }
+// }
 
 // menu();
 
@@ -604,8 +604,65 @@ localStorage.setItem("searchDino", JSON.stringify(searchDino));
 
 sessionStorage.setItem("showUsers", JSON.stringify(showUsers));
 
-// EVENTOS
+// EVENTOS //
 
-buttonLogDna.addEventListener("click", DnaLab());
+//SEARCH DINOSAURS (AÚN SIN FUNCIONAR)
 
-btnSearchDino.addEventListener("click", JSON.stringify(search));
+// btnSearchDino.addEventListener("click", JSON.stringify(search));
+
+const form = document.querySelector("form");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const searchTerm = document.querySelector("#searchDinosaur").value;
+  findDinoById(searchTerm);
+});
+
+// SEARCH PERSONEL (FALTANTE)
+
+//LOGINS
+
+document
+  .getElementById("buttonLogDna")
+  .addEventListener("click", function (dnaLab) {
+    dnaLab.preventDefault();
+    const logUserDna = document.getElementById("logUserDna").value;
+    const passDna = document.getElementById("passDna").value;
+
+    if (logUserDna === "better_than_god" && passDna === "2470") {
+      window.location.href = "dnaLab.html";
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "WARNING!",
+        text: "Please verify your user and pass",
+      });
+    }
+  });
+
+let attempts = 0;
+
+document
+  .getElementById("buttonSecurity")
+  .addEventListener("click", function (systemSecurity) {
+    systemSecurity.preventDefault();
+    const logUserSecurity = document.getElementById("logUserSecurity").value;
+    const passSecurity = document.getElementById("passSecurity").value;
+
+    if (logUserSecurity === "dennis.nedry" && passSecurity === "1993") {
+      window.location.href = "jpSystemSecurity.html";
+    } else {
+      attempts += 1;
+      if (attempts === 3) {
+        Swal.fire({
+          icon: "error",
+          title: "PERMISSION DENIED!",
+          text: "PERMISSION DENIED...AND...YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD! YOU DIDN'T SAY THE MAGIC WORD!",
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Permission denied",
+        });
+      }
+    }
+  });
