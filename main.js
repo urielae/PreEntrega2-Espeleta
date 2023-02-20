@@ -56,7 +56,6 @@ class users {
     this.charge = charge;
   }
 }
-// console.log(users.length);
 
 const user1 = new users("John Hammond", "tim.lex", 1423, "Park Owner");
 
@@ -79,15 +78,8 @@ const user5 = new users(
 );
 
 const showUsers = [user1, user2, user3, user4, user5];
-// console.log(usser1);
-// console.log(usser2);
-// console.log(usser3);
-// console.log(usser4);
-// console.log(usser5);
 
-showUsers.forEach((users) => {
-  // console.log(users.name, users.user, users.pass, users.charge);
-});
+showUsers.forEach((users) => {});
 
 const searchUser = [
   { name: "John Hammond", charge: "Park Owner" },
@@ -96,9 +88,6 @@ const searchUser = [
   { name: "Henry Wu", charge: "Geneticist" },
   { name: "Robert Muldoon", charge: "The Parks game warden" },
 ];
-
-// const result = searchUsser.filter((elem) => elem.name.includes("John"));
-// console.log(result);
 
 function search() {
   let searchName = prompt(
@@ -114,18 +103,6 @@ function search() {
     );
   }
 }
-
-// search();
-
-// OPTION 1: LOG IN //
-// function logInJp() {
-//   let logued = prompt("Please insert your username");
-//   let passlog = parseInt(prompt("Insert four digit password"));
-//   if (logued == users.user && passlog == users.pass) {
-//   }
-// }
-// console.log(`Access granted, Welcome to JP Complex`);
-//  logInJp();
 
 // OPTION 3: JP SYSTEM SECURITY //
 
@@ -152,7 +129,6 @@ function systemSecurity() {
     }
   } while (!keyWord && attemps < 3);
 }
-// systemSecurity()
 
 //OPTION 4: ACCESS TO DNA LAB SYSTEM//
 
@@ -161,9 +137,6 @@ function DnaLab() {
   let attempsLab = 0;
 
   do {
-    // let lablogIn = prompt("Insert your username");
-    // let labPassword = parseInt(prompt("Insert four digit password"));
-
     if (logUserDna == user4.user && passDna == user4.pass) {
       labKeyWord = true;
       alert(`ACCESS GRANTED, WELCOME ${user4.name}`.toUpperCase(user4.name));
@@ -181,7 +154,6 @@ function DnaLab() {
     }
   } while (!labKeyWord && attempsLab < 3);
 }
-// DnaLab()
 
 // OPTION 5: DINOSAURS LIST //
 
@@ -204,7 +176,6 @@ class dinosaurs {
     this.jpId = jpId;
   }
 }
-// console.log(dinosaurs.length);
 
 const dino1 = new dinosaurs(
   "Tyrant lizard/reptile king",
@@ -407,18 +378,6 @@ const showDino = [
   dino18,
 ];
 
-showDino.forEach((dinosaurs) => {
-  // console.log(
-  //   dinosaurs.nameMeaning,
-  //   dinosaurs.codeName,
-  //   dinosaurs.diet,
-  //   dinosaurs.heightMeters,
-  //   dinosaurs.lenghtMeters,
-  //   dinosaurs.weightKg,
-  //   dinosaurs.jpId
-  // );
-});
-
 const searchDino = [
   { codeName: "Tyrannosaurus rex", diet: "Carnivore", jpId: "1" },
   { codeName: "Compsognathus", diet: "Carnivore", jpId: "2" },
@@ -476,124 +435,8 @@ function findDinoById() {
     );
   }
 }
-// findDinoByCodeName();
 
 // OPTION 6: JP MAP (UNDER CONSTRUCTION) //
-
-// MAIN MENU //
-
-// function menu() {
-//   let quitMenu = false;
-//   do {
-//     quitMenu = askOption(quitMenu);
-//   } while (!quitMenu);
-// }
-
-// function askOption(quit) {
-//   let dataInserted = parseInt(
-//     prompt(`Welcome to Jurassic Park Complex System, please choose an option
-//   1 - Log In
-//   2 - Search Personel of JP Complex
-//   3 - JP System Security
-//   4 - Access to DNA Lab System
-//   5 - Access to Dinosaurs List
-//   6 - JP Nublar Island Map (Site A)
-//   7 - Site B
-//   8 - Exit JP Complex System`)
-//   );
-
-//   switch (dataInserted) {
-//     case 1:
-//       logInJp();
-//       alert("Access granted, Welcome to JP Complex");
-//       break;
-//     case 2:
-//       search();
-//       break;
-//     case 3:
-//       systemSecurity();
-//       break;
-//     case 4:
-//       DnaLab();
-//       break;
-//     case 5:
-//       subMenuDino();
-//       break;
-//     case 6:
-//       alert("SORRY WE ARE UNDER CONSTRUCTION");
-//       break;
-//     case 7:
-//       alert("WARNING! PERMISSION DENIED, ONLY INGEN PERSONEL");
-//       break;
-//     case 8:
-//       alert("Thanks for use JP Complex System");
-//       quit = true;
-//       return quit;
-//       break;
-//     default:
-//       alert("Choose a correct option");
-//       break;
-//   }
-// }
-
-// function subMenuDino() {
-//   let quitMenuDino = false;
-//   do {
-//     quitMenuDino = optionDino(quitMenuDino);
-//   } while (!quitMenuDino);
-// }
-
-// function optionDino(quit) {
-//   let dataInsertedDino = parseInt(
-//     prompt(`Welcome to Jurassic Park Dinosaurs list
-//   1 - Search Dinosaur by name
-//   2 - Search Dinosaur by food and energy requirements
-//   3 - Search Dinosaur by ID
-//   4 - Exit Dinosaurs list`)
-//   );
-
-//   switch (dataInsertedDino) {
-//     case 1:
-//       findDinoByCodeName();
-//       break;
-//     case 2:
-//       findDinoByDiet();
-//       break;
-//     case 3:
-//       findDinoById();
-//       break;
-//     case 4:
-//       alert("Logging out");
-//       quit = true;
-//       return quit;
-//       break;
-//     default:
-//       alert("Choose a correct option");
-//       break;
-//   }
-// }
-
-// menu();
-
-///////////////////////////////////////////
-
-// SORT X APELLIDO
-// const usuarios = [
-//   { name: 'John', surname: 'Hammond'},
-//   { name: 'John', surname: 'Arnold'},
-//   { name: 'Dennis', surname: 'Nedry'},
-//   { name: 'Henry', surname: 'Wu'},
-//   { name: 'Robert', surname: 'Muldoon'},
-// ]
-// usuarios.sort((a,b) => {
-//   if (a.surname > b.surname) {
-//     return 1;
-//   } if (a.surname < b.surname) {
-//     return -1;
-//   }
-//   return 0;
-// })
-// console.log(usuarios)
 
 // LOCAL STORAGE
 
@@ -605,19 +448,6 @@ localStorage.setItem("searchDino", JSON.stringify(searchDino));
 sessionStorage.setItem("showUsers", JSON.stringify(showUsers));
 
 // EVENTOS //
-
-//SEARCH DINOSAURS (AÚN SIN FUNCIONAR)
-
-// btnSearchDino.addEventListener("click", JSON.stringify(search));
-
-const form = document.querySelector("form");
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const searchTerm = document.querySelector("#searchDinosaur").value;
-  findDinoById(searchTerm);
-});
-
-// SEARCH PERSONEL (FALTANTE)
 
 //LOGINS
 

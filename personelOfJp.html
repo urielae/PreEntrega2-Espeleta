@@ -4,31 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="shortcut icon"
       href="/images/PngItem_6458080.png"
       type="image/x-icon"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>JP Complex</title>
   </head>
   <body>
-    <nav class="container-fluid">
-      <div class="d-flex align-items-center row py-2">
+    <nav class="container-fluid py-2">
+      <div class="d-flex align-items-center row">
+        <!-- DINOSAURS PAGE -->
         <div class="col">
           <a class="d-flex justify-content-center" href="dinosaurs.html"
             ><img
+              data-aos="zoom-out-right"
               src="./images/kisspng-jurassic-world-the-game-jurassic-world-evoluti-jurassic-world-2-5b332a5a14f7c9.8089974015300798340859.png"
               class="dinosaurs"
               alt=""
           /></a>
         </div>
+        <!-- DNA PAGE -->
         <div id="dnaLab" class="col">
           <a
             class="d-flex justify-content-center"
@@ -38,9 +45,14 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             data-bs-whatever="@mdo"
-            ><img src="./images/pngwing.com.png" class="dnaLab" alt=""
+            ><img
+              data-aos="zoom-out-right"
+              src="./images/pngwing.com.png"
+              class="dnaLab"
+              alt=""
           /></a>
         </div>
+        <!-- JP SECURITY PAGE -->
         <div id="jpSecurity" class="col">
           <a
             class="d-flex justify-content-center"
@@ -50,19 +62,34 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal1"
             data-bs-whatever="@fat"
-            ><img src="./images/securityJP.png" class="jpSecurity" alt=""
+            ><img
+              data-aos="zoom-out-right"
+              src="./images/securityJP.png"
+              class="jpSecurity"
+              alt=""
           /></a>
         </div>
+        <!-- NUBLAR MAP PAGE -->
         <div class="col">
           <a class="d-flex justify-content-center" href="nublarMap.html"
-            ><img src="./images/visitorsJp.png" class="nublarMap" alt=""
+            ><img
+              data-aos="zoom-out"
+              src="./images/visitorsJp.png"
+              class="nublarMap"
+              alt=""
           /></a>
         </div>
+        <!-- JP PERSONEL PAGE -->
         <div id="jpPersonel" class="col">
           <a class="d-flex justify-content-center" href="personelOfJp.html"
-            ><img src="./images/personelJP.png" class="personelJP" alt=""
+            ><img
+              data-aos="zoom-out-left"
+              src="./images/personelJP.png"
+              class="personelJP"
+              alt=""
           /></a>
         </div>
+        <!-- SITE B PAGE -->
         <div id="siteB" class="col">
           <a
             class="d-flex justify-content-center"
@@ -71,12 +98,21 @@
             class="btn btn-primary"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal3"
-            ><img src="./images/BSite.png" id="siteB" alt=""
+            ><img
+              data-aos="zoom-out-left"
+              src="./images/BSite.png"
+              id="siteB"
+              alt=""
           /></a>
         </div>
+        <!-- INDEX PAGE -->
         <div class="col">
           <a class="d-flex justify-content-center" href="index.html"
-            ><img src="./images/index.png" class="index" alt=""
+            ><img
+              data-aos="zoom-out-left"
+              src="./images/index.png"
+              class="index"
+              alt=""
           /></a>
         </div>
       </div>
@@ -246,24 +282,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex flex-row-reverse pe-5 mt-5 pt-2 pb-4">
-        <form class="d-inline-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Buscar"
-            aria-label="Buscar"
-          />
-          <button
-            id="btnSearchPersonel"
-            class="btn btn-dark btn-outline-light"
-            type="submit"
-          >
-            Buscar
-          </button>
-        </form>
-      </div>
-      <div class="row">
+      <div class="row mt-5 pt-2">
         <div class="col">
           <div id="hammond">
             <div class="ps-4 py-5">
@@ -391,12 +410,20 @@
         </div>
       </footer>
     </div>
+    <!-- JS -->
     <script src="./main.js"></script>
+    <!-- BS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- SWEET ALERT -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

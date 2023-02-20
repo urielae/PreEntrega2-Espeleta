@@ -4,31 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="shortcut icon"
       href="/images/PngItem_6458080.png"
       type="image/x-icon"
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>JP Complex</title>
   </head>
   <body>
-    <nav class="container-fluid">
-      <div class="d-flex align-items-center row py-2">
+    <nav class="container-fluid py-2">
+      <div class="d-flex align-items-center row">
+        <!-- DINOSAURS PAGE -->
         <div class="col">
           <a class="d-flex justify-content-center" href="dinosaurs.html"
             ><img
+              data-aos="zoom-out-right"
               src="./images/kisspng-jurassic-world-the-game-jurassic-world-evoluti-jurassic-world-2-5b332a5a14f7c9.8089974015300798340859.png"
               class="dinosaurs"
               alt=""
           /></a>
         </div>
+        <!-- DNA PAGE -->
         <div id="dnaLab" class="col">
           <a
             class="d-flex justify-content-center"
@@ -38,32 +45,74 @@
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             data-bs-whatever="@mdo"
-            ><img src="./images/pngwing.com.png" class="dnaLab" alt=""
+            ><img
+              data-aos="zoom-out-right"
+              src="./images/pngwing.com.png"
+              class="dnaLab"
+              alt=""
           /></a>
         </div>
+        <!-- JP SECURITY PAGE -->
         <div id="jpSecurity" class="col">
-          <a class="d-flex justify-content-center" href="jpSystemSecurity.html" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@fat"
-            ><img src="./images/securityJP.png" class="jpSecurity" alt=""
+          <a
+            class="d-flex justify-content-center"
+            href="jpSystemSecurity.html"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal1"
+            data-bs-whatever="@fat"
+            ><img
+              data-aos="zoom-out-right"
+              src="./images/securityJP.png"
+              class="jpSecurity"
+              alt=""
           /></a>
         </div>
+        <!-- NUBLAR MAP PAGE -->
         <div class="col">
           <a class="d-flex justify-content-center" href="nublarMap.html"
-            ><img src="./images/visitorsJp.png" class="nublarMap" alt=""
+            ><img
+              data-aos="zoom-out"
+              src="./images/visitorsJp.png"
+              class="nublarMap"
+              alt=""
           /></a>
         </div>
+        <!-- JP PERSONEL PAGE -->
         <div id="jpPersonel" class="col">
           <a class="d-flex justify-content-center" href="personelOfJp.html"
-            ><img src="./images/personelJP.png" class="personelJP" alt=""
+            ><img
+              data-aos="zoom-out-left"
+              src="./images/personelJP.png"
+              class="personelJP"
+              alt=""
           /></a>
         </div>
+        <!-- SITE B PAGE -->
         <div id="siteB" class="col">
-          <a class="d-flex justify-content-center" href="#" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3"
-            ><img src="./images/BSite.png" id="siteB" alt=""
+          <a
+            class="d-flex justify-content-center"
+            href="#"
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal3"
+            ><img
+              data-aos="zoom-out-left"
+              src="./images/BSite.png"
+              id="siteB"
+              alt=""
           /></a>
         </div>
+        <!-- INDEX PAGE -->
         <div class="col">
           <a class="d-flex justify-content-center" href="index.html"
-            ><img src="./images/index.png" class="index" alt=""
+            ><img
+              data-aos="zoom-out-left"
+              src="./images/index.png"
+              class="index"
+              alt=""
           /></a>
         </div>
       </div>
@@ -194,24 +243,12 @@
           </div>
         </div>
       </div>
-      <div class="dinoPage">
-        <div class="d-flex flex-row-reverse pe-5 mt-5 pt-2 pb-4">
-          <form class="d-inline-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Buscar"
-            />
-            <button id="btnSearchDino" class="btn btn-dark btn-outline-light" type="submit">
-              Buscar
-            </button>
-          </form>
-        </div>
+      <div class="dinoPage mt-5 pt-2">
+        <!-- T-REX -->
         <div id="tRex">
           <div class="d-flex align-items-center pb-5">
           <div class="dino1 py-4 ps-5 flex-fill">
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 18rem" data-aos="flip-left">
               <img
                 src="./images/TRex.png"
                 class="card-img-top"
@@ -302,11 +339,12 @@
           </div>
         </div>
       </div>
+      <!-- COMPI -->
         <div id="compi">
           <div class="d-flex align-items-center flex-row-reverse pb-5">
           <div class="dino1 py-4 pe-5 flex-fill">
-            <div class="card" style="width: 18rem">
-              <img
+            <div class="card" style="width: 18rem" data-aos="flip-right">
+              <img 
                 src="./images/compsognathus.png"
                 class="card-img-top"
                 alt="Compsognathus"
@@ -357,10 +395,11 @@
           </div>
         </div>
       </div>
+      <!-- ANKY -->
         <div id="anky">
           <div class="d-flex align-items-center pb-5">
           <div class="dino1 py-4 ps-5 flex-fill">
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 18rem" data-aos="flip-left">
               <img
                 src="./images/Ankylosaurus.png"
                 class="card-img-top"
@@ -408,10 +447,11 @@
           </div>
         </div>
         </div>
+        <!-- BRACHI -->
         <div id="brachi">
          <div class="d-flex align-items-center pb-5 flex-row-reverse">
           <div class="dino1 py-4 pe-5 flex-fill">
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 18rem" data-aos="flip-right">
               <img
                 src="./images/Brachiosaurus.png"
                 class="card-img-top"
@@ -445,10 +485,11 @@
           </div>     
          </div>
         </div>
+        <!-- CERA -->
         <div id="cera">
           <div class="d-flex align-items-center pb-5">
         <div class="dino1 py-4 ps-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-left">
             <img
               src="./images/Ceratosaurus.png"
               class="card-img-top"
@@ -479,6 +520,7 @@
         </div>
       </div>
         </div>
+        <!-- CORI -->
       <div id="cory">
         <div class="d-flex align-items-center pb-5 flex-row-reverse">
         <div class="dino1 py-4 pe-5 flex-fill">
@@ -518,10 +560,11 @@
         </div>
       </div>
       </div>
+      <!-- DILO -->
       <div id="dilo">
         <div class="d-flex align-items-center pb-5">
         <div class="dino1 py-4 ps-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-left">
             <img
               src="./images/Dilophosaurus.png"
               class="card-img-top"
@@ -552,10 +595,11 @@
         </div>
       </div>
       </div>
+      <!-- GALLI -->
       <div id="galli">
         <div class="d-flex align-items-center pb-5 flex-row-reverse">
         <div class="dino1 py-4 pe-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-right">
             <img
               src="./images/Gallimimus.png"
               class="card-img-top"
@@ -586,10 +630,11 @@
         </div>
       </div>
       </div>
+      <!-- IGUA -->
       <div id="igua">
         <div class="d-flex align-items-center pb-5">
         <div class="dino1 py-4 ps-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-left">
             <img
               src="./images/Iguanodon.png"
               class="card-img-top"
@@ -623,10 +668,11 @@
         </div>
       </div>
       </div>
+      <!-- MAME -->
       <div id="mame">
         <div class="d-flex align-items-center pb-5 flex-row-reverse">
         <div class="dino1 py-4 pe-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-right">
             <img
               src="./images/Mamenchisaurus.png"
               class="card-img-top"
@@ -657,10 +703,11 @@
         </div>
       </div>
       </div>
+      <!-- OURA -->
       <div id="oura">
         <div class="d-flex align-items-center pb-5">
         <div class="dino1 py-4 ps-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-left">
             <img
               src="./images/Ouranosaurus.png"
               class="card-img-top"
@@ -688,10 +735,11 @@
         </div>
       </div>
       </div>
+      <!-- PACHY -->
       <div id="pachy">
         <div class="d-flex align-items-center pb-5 flex-row-reverse">
         <div class="dino1 py-4 pe-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-right">
             <img
               src="./images/Pachycephalosaurus.png"
               class="card-img-top"
@@ -725,10 +773,11 @@
         </div>
       </div>
       </div>
+      <!-- PARA -->
       <div id="para">
         <div class="d-flex align-items-center pb-5">
         <div class="dino1 py-4 ps-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-left">
             <img
               src="./images/Parasaurolophus.png"
               class="card-img-top"
@@ -756,10 +805,11 @@
         </div>
       </div>
       </div>
+      <!-- PTERA -->
       <div id="ptera">
         <div class="d-flex align-items-center pb-5 flex-row-reverse">
         <div class="dino1 py-4 pe-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-right">
             <img
               src="./images/Pteranodon.png"
               class="card-img-top"
@@ -796,10 +846,11 @@
         </div>
       </div>
       </div>
+      <!-- SPINO -->
       <div id="spino">
         <div class="d-flex align-items-center pb-5">
         <div class="dino1 py-4 ps-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-left">
             <img
               src="./images/Spinosaurus.png"
               class="card-img-top"
@@ -839,10 +890,11 @@
         </div>
       </div>
       </div>
+      <!-- STEGo -->
       <div id="stego">
         <div class="d-flex align-items-center pb-5 flex-row-reverse">
         <div class="dino1 py-4 pe-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-right">
             <img
               src="./images/Stegosaurus.png"
               class="card-img-top"
@@ -882,14 +934,15 @@
         </div>
       </div>
       </div>
+      <!-- TRICE -->
       <div id="trice">
         <div class="d-flex align-items-center pb-5">
         <div class="dino1 py-4 ps-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-left">
             <img
               src="./images/Triceratops.png"
               class="card-img-top"
-              alt="Triceratops"
+              alt="Triceratops" 
             />
             <div class="card-body card text-white bg-dark">
               <h3 class="card-title">Triceratops</h3>
@@ -922,10 +975,11 @@
         </div>
       </div>
       </div>
+      <!-- VELO -->
       <div id="velo">
         <div class="d-flex align-items-center pb-5 flex-row-reverse">
         <div class="dino1 py-4 pe-5 flex-fill">
-          <div class="card" style="width: 18rem">
+          <div class="card" style="width: 18rem" data-aos="flip-right">
             <img
               src="./images/Velociraptor.png"
               class="card-img-top"
@@ -970,12 +1024,20 @@
         </div>
       </footer>
     </div>
+    <!-- JS -->
     <script src="./main.js"></script>
+    <!-- BS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- SWEET ALERT -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
